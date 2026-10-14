@@ -1,0 +1,29 @@
+{
+  "name": "survos/image-contracts",
+  "type": "library",
+  "description": "Backend-neutral contracts for image URL building (imgproxy, imagor) and image metadata.",
+  "license": "MIT",
+  "keywords": ["image", "imgproxy", "imagor", "thumbnail", "contracts"],
+  "autoload": {
+    "psr-4": {
+      "Survos\\ImageContracts\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Survos\\ImageContracts\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^13.0"
+  },
+  "suggest": {
+    "survos/imgproxy-bundle": "An ImageUrlBuilderInterface/ImageMetaProviderInterface implementation backed by imgproxy",
+    "survos/imagor-bundle": "An ImageUrlBuilderInterface/ImageMetaProviderInterface implementation backed by imagor"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
